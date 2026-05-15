@@ -1,0 +1,835 @@
+:root {
+    --main_blue: #085A9C;
+    --btn_orange: #FB5C04;
+    --text-black: #333333;
+    --bg_blue: #F0F8FF;
+}
+
+/* ------------------------------
+共通設定
+------------------------------ */
+body {
+    min-width: 347px;
+    text-align: center;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    color: var(--text-black);
+    background-color: #fff;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+.inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 21px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.sub_title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: var(--main_blue);
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.features,
+.CaseStudy,
+.btn_03 {
+    background-color: var(--bg_blue);
+}
+
+.pc_only {
+    display: none;
+}
+
+.sp_only {
+    display: block;
+}
+
+.br_pc {
+    display: none;
+}
+
+.br_sp {
+    display: inline;
+}
+
+/* ------------------------------
+btn設定
+------------------------------*/
+
+.btn {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.btn p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn_orange);
+    color: #ffffff;
+    padding: 12.5px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.1s;
+}
+
+.btn a:active {
+    top: 5px;
+    box-shadow: none;
+}
+
+.btn_text {
+    font-size: 24px;
+}
+
+header .btn p {
+    font-size: 24px;
+}
+
+.btn_02,
+.btn_03,
+.btn_04 {
+    margin: 40px auto;
+}
+
+.btn_img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.btn_img p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.btn_img a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn_orange);
+    color: #ffffff;
+    padding: 12.5px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.btn_img a:active {
+    border-bottom: 0;
+    transform: translateY(5px);
+}
+
+/* ------------------------------
+ヘッダー設定
+------------------------------*/
+
+h1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--main_blue);
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.main_visual {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -22px;
+}
+
+.main_visual .sp_only {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.mv_btn_area {
+    position: absolute;
+    bottom: 8%;
+}
+
+.mv_btn_area .btn p {
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(15, 15, 15, 1);
+    font-weight: bold;
+}
+
+/* ------------------------------
+悩み
+------------------------------*/
+
+.troubles {
+    margin-top: 40px;
+}
+
+.sub_title {
+    margin-bottom: 40px;
+}
+
+.trouble_list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.trouble_item {
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.trouble_item p {
+    min-height: 4.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.trouble_item img {
+    width: 143px;
+    height: 143px;
+    object-fit: contain;
+    display: block;
+}
+
+.trouble_item:nth-child(3) {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.trouble_item:nth-child(3) img {
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ------------------------------
+特徴
+------------------------------*/
+
+.features .sub_title {
+    margin-bottom: 40px;
+}
+
+.features_list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.features_item {
+    width: 163px;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.features_item h3 {
+    margin: 15px;
+}
+
+.features_item p {
+    min-height: 4.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.features_item img {
+    width: 143px;
+    height: 143px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.features_item:nth-child(3) {
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.features_item:nth-child(1) img {
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.features_item:nth-child(3) img {
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ------------------------------
+転職事例
+------------------------------*/
+
+.CaseStudy_item {
+    margin-bottom: 40px;
+}
+
+.CaseStudy_item img {
+    margin: 0 auto;
+    width: 143px;
+    height: 143px;
+    margin-bottom: 10px;
+}
+
+.CaseStudy_item p {
+    margin-top: 10px;
+}
+
+.CaseStudy_age {
+    font-size: 14px;
+}
+
+.CaseStudy_exJob {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.CaseStudy_arrow {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.CaseStudy_newJob {
+    font-size: 16px;
+    width: 120px;
+}
+
+.CaseStudy_newJob {
+    width: 140px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.CaseStudy_Job_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------
+転職事例
+------------------------------*/
+
+.use_list {
+    width: 346px;
+    margin: 0 auto;
+}
+
+.use_text {
+    margin-bottom: 10px;
+}
+
+.use_img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.use_arrow_sp {
+    width: 34px;
+    height: 30px;
+    margin: 60px auto;
+}
+
+/* ------------------------------
+イラストありボタン
+------------------------------*/
+
+.btn_img img {
+    width: 195px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+/* ------------------------------
+FAQ
+------------------------------*/
+
+.faq {
+    margin: 40px auto;
+}
+
+.faq_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq_item {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align-last: left;
+}
+
+.faq_q {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    list-style: none;
+}
+
+.faq_q_icon {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--main_blue);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.faq_q_text {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.faq_q::after {
+    content: "▼";
+    color: var(--main_blue);
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+
+.faq_a {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    list-style: none;
+}
+
+.faq_a_icon {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--main_blue);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.faq_a p {
+    flex: 1;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+}
+
+/* ------------------------------
+フッター
+------------------------------*/
+
+footer {
+    height: 100px;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_blue);
+    color: #fff;
+}
+
+
+/* ------------------------------
+レスポンシブ
+------------------------------*/
+@media screen and (min-width: 768px) {
+
+    /* 共通設定 */
+    .pc_only {
+        display: block;
+    }
+
+    .sp_only {
+        display: none;
+    }
+
+    .br_pc {
+        display: inline;
+    }
+
+    .br_sp {
+        display: none;
+    }
+
+    picture.sp_only {
+        display: none !important;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    .faq_a p {
+        font-size: 16px;
+    }
+
+    .sub_title {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 1.4;
+        font-weight: bold;
+    }
+
+    /* ボタン設定 */
+
+    .btn {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .btn p {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .btn_text {
+        font-size: 40px;
+    }
+
+    .btn_arrow {
+        font-size: 32px;
+    }
+
+
+    /* ファーストビュー */
+    .main_visual .sp_only {
+        display: none;
+    }
+
+    .main_visual .pc_only {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--main_blue);
+        padding: 0;
+        position: relative;
+        z-index: 10;
+        text-align: left;
+    }
+
+    .mv_btn_area {
+        position: absolute;
+        left: 12%;
+        bottom: 18%;
+    }
+
+    .mv_btn_area .btn p {
+        margin-bottom: 10px;
+        color: #333;
+        text-shadow: none;
+         text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.4);
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    /* 悩み */
+    .troubles {
+        margin-top: 0;
+    }
+
+    .trouble_item p {
+        font-size: 16px;
+    }
+
+    .trouble_item img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .trouble_item:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .trouble_item:nth-child(3) img {
+        margin-top: 0;
+    }
+
+    /* 特徴 */
+
+    .features_item {
+        width: 230px;
+    }
+
+    .features_item img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .features_item p {
+        font-size: 16px;
+    }
+
+    .features_item:nth-child(1) {
+        margin-top: 15px;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* ボタン2 */
+    .btn_02 {
+        text-align: center;
+    }
+
+    .btn_02 .btn {
+        width: 700px;
+    }
+
+    .btn_02 p {
+        width: 700px;
+        font-size: 32px;
+    }
+
+    .btn_02 a {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+
+    /* 事例 */
+    .CaseStudy_list {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .CaseStudy_item img {
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .CaseStudy_age {
+        font-size: 14px;
+    }
+
+    .CaseStudy_exJob {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .CaseStudy_Job_area {
+        margin-bottom: 20px;
+    }
+
+    .CaseStudy_age:nth-child(1) p {
+        margin-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* 利用方法 */
+    .use_list {
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .use_list picture img{
+        height: 34px;
+    }
+
+    .use_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .btn_03 {
+        margin: 40px 0;
+    }
+
+    .btn_img {
+        width: 100%;
+    }
+
+    .btn_img .pc_only {
+        width: 100%;
+    }
+
+    .btn_img_pc_flex {
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .pc_txt_btn_area {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pc_txt_btn_area p {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    .pc_txt_btn_area a {
+        width: 100%;
+        max-width: 450px;
+        margin: 0;
+    }
+
+    .pc_img_area img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    /* FAQ */
+    .faq_q {
+        margin: 20px 40px;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .faq_q_icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        font-size: 32px;
+    }
+
+    .faq_q::after {
+        content: "▼";
+        color: var(--main_blue);
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .faq_a {
+        margin: 20px 40px;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .faq_a_icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        font-size: 32px;
+    }
+
+    /* ボタン4 */
+
+    .btn_04 {
+        text-align: center;
+    }
+
+    .btn_04 .btn {
+        width: 800px;
+    }
+
+    .btn_04 p {
+        width: 800px;
+        font-size: 32px;
+    }
+
+    .btn_04 a {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    /* フッター */
+
+    footer h3{
+        font-size: 16px;
+    }
+
+}
